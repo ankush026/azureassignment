@@ -43,6 +43,22 @@
 			"type": "string",
 			"defaultValue": "projectrg"
 		},
+		"AzureDataLakeStore3_properties_typeProperties_dataLakeStoreUri": {
+			"type": "string",
+			"defaultValue": "https://projectdatalake3.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore3_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "a4431f4b-c207-4733-9530-34c08a9b2b8d"
+		},
+		"AzureDataLakeStore3_properties_typeProperties_subscriptionId": {
+			"type": "string",
+			"defaultValue": "7f454a51-643f-4614-be95-67a76e596767"
+		},
+		"AzureDataLakeStore3_properties_typeProperties_resourceGroupName": {
+			"type": "string",
+			"defaultValue": "projectrg"
+		},
 		"DataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
 			"type": "string",
 			"defaultValue": "https://prodatalakegen1.azuredatalakestore.net/webhdfs/v1"
@@ -128,6 +144,18 @@
 					},
 					"AzureDataLakeStore2_properties_typeProperties_resourceGroupName": {
 						"value": "[parameters('AzureDataLakeStore2_properties_typeProperties_resourceGroupName')]"
+					},
+					"AzureDataLakeStore3_properties_typeProperties_dataLakeStoreUri": {
+						"value": "[parameters('AzureDataLakeStore3_properties_typeProperties_dataLakeStoreUri')]"
+					},
+					"AzureDataLakeStore3_properties_typeProperties_tenant": {
+						"value": "[parameters('AzureDataLakeStore3_properties_typeProperties_tenant')]"
+					},
+					"AzureDataLakeStore3_properties_typeProperties_subscriptionId": {
+						"value": "[parameters('AzureDataLakeStore3_properties_typeProperties_subscriptionId')]"
+					},
+					"AzureDataLakeStore3_properties_typeProperties_resourceGroupName": {
+						"value": "[parameters('AzureDataLakeStore3_properties_typeProperties_resourceGroupName')]"
 					},
 					"DataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
 						"value": "[parameters('DataLakeStore1_properties_typeProperties_dataLakeStoreUri')]"
