@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ankushprojectdf"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://prodatalakegen1.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_tenant": {
+			"value": "a4431f4b-c207-4733-9530-34c08a9b2b8d"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_subscriptionId": {
+			"value": "7f454a51-643f-4614-be95-67a76e596767"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
+			"value": "projectrg"
+		},
+		"AzureDataLakeStore2_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://projectdatalake2.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore2_properties_typeProperties_tenant": {
+			"value": "a4431f4b-c207-4733-9530-34c08a9b2b8d"
+		},
+		"AzureDataLakeStore2_properties_typeProperties_subscriptionId": {
+			"value": "7f454a51-643f-4614-be95-67a76e596767"
+		},
+		"AzureDataLakeStore2_properties_typeProperties_resourceGroupName": {
+			"value": "projectrg"
+		},
+		"DataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://prodatalakegen1.azuredatalakestore.net/webhdfs/v1"
+		},
+		"DataLakeStore1_properties_typeProperties_tenant": {
+			"value": "a4431f4b-c207-4733-9530-34c08a9b2b8d"
+		},
+		"DataLakeStore1_properties_typeProperties_subscriptionId": {
+			"value": "7f454a51-643f-4614-be95-67a76e596767"
+		},
+		"DataLakeStore1_properties_typeProperties_resourceGroupName": {
+			"value": "projectrg"
+		},
+		"DataLakeStore2_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://projectdatalake2.azuredatalakestore.net/webhdfs/v1"
+		},
+		"DataLakeStore2_properties_typeProperties_tenant": {
+			"value": "a4431f4b-c207-4733-9530-34c08a9b2b8d"
+		},
+		"DataLakeStore2_properties_typeProperties_subscriptionId": {
+			"value": "7f454a51-643f-4614-be95-67a76e596767"
+		},
+		"DataLakeStore2_properties_typeProperties_resourceGroupName": {
+			"value": "projectrg"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
