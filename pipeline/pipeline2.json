@@ -19,7 +19,7 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureDataLakeStoreReadSettings",
-							"recursive": true,
+							"recursive": false,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -50,7 +50,13 @@
 				"inputs": [
 					{
 						"referenceName": "DelimitedText4",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"inputfilename": {
+								"value": "@pipeline().parameters.inputfilename",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -61,6 +67,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"inputfilename": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }

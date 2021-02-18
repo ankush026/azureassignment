@@ -5,12 +5,20 @@
 			"referenceName": "DataLakeStore4",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"inputfilename": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"fileName": "movies.csv",
+				"fileName": {
+					"value": "@dataset().inputfilename",
+					"type": "Expression"
+				},
 				"folderPath": "inputfolder"
 			},
 			"columnDelimiter": ",",
