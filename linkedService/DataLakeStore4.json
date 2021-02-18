@@ -1,0 +1,13 @@
+{
+	"name": "DataLakeStore4",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://projectdatalake1.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "a4431f4b-c207-4733-9530-34c08a9b2b8d",
+			"subscriptionId": "7f454a51-643f-4614-be95-67a76e596767",
+			"resourceGroupName": "azureproject"
+		}
+	}
+}
