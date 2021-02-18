@@ -241,7 +241,7 @@
 								"type": "DelimitedTextSource",
 								"storeSettings": {
 									"type": "AzureDataLakeStoreReadSettings",
-									"recursive": true,
+									"recursive": false,
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -273,7 +273,12 @@
 							{
 								"referenceName": "DelimitedText4",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"inputfilename": {
+										"value": "@pipeline().parameters.inputfilename",
+										"type": "Expression"
+									}
+								}
 							}
 						],
 						"outputs": [
@@ -285,6 +290,11 @@
 						]
 					}
 				],
+				"parameters": {
+					"inputfilename": {
+						"type": "String"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -390,12 +400,20 @@
 					"referenceName": "DataLakeStore4",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"inputfilename": {
+						"type": "String"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureDataLakeStoreLocation",
-						"fileName": "movies.csv",
+						"fileName": {
+							"value": "@dataset().inputfilename",
+							"type": "Expression"
+						},
 						"folderPath": "inputfolder"
 					},
 					"columnDelimiter": ",",
