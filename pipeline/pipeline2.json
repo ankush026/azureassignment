@@ -50,13 +50,7 @@
 				"inputs": [
 					{
 						"referenceName": "DelimitedText4",
-						"type": "DatasetReference",
-						"parameters": {
-							"inputfilename": {
-								"value": "@pipeline().parameters.inputfilename",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
